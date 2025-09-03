@@ -18,6 +18,7 @@ struct ContentView: View {
         VStack {
             Button("Request Non Encoded", action: requestNonEncoded)
             Button("Request Encoded ", action: requestEncoded)
+            Button("Request URLSession ", action: requestURLSession)
         }
     }
     
@@ -39,6 +40,19 @@ struct ContentView: View {
                 method: .get,
                 path: "/some-path/\(id)",
             ).requestAsync()
+        }
+    }
+    
+    func requestURLSession() {
+        let id = "5%2F7"
+        Task {
+            let url = URL(string: "https://some-url.com/some-path/\(id)")!
+            let req = URLRequest(url: url)
+            let (data, response) = try await URLSession.shared.data(for: req)
+
+            if let httpResponse = response as? HTTPURLResponse {
+                print("URL:", httpResponse.url?.absoluteString ?? "nil")
+            }
         }
     }
 }
