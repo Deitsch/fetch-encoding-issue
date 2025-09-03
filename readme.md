@@ -1,0 +1,1 @@
+example for https://github.com/allaboutapps/Fetch/issues/39
