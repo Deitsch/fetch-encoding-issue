@@ -1,0 +1,24 @@
+{
+  "originHash" : "ef477ccaf90535e09bc5b7cbea5bf3f2c5fbaeda7a9d39907d2bd82b716ffd48",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "fetch",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/allaboutapps/Fetch",
+      "state" : {
+        "revision" : "3d3adacc353637828cc7791338309850ce029f33",
+        "version" : "3.2.0"
+      }
+    }
+  ],
+  "version" : 3
+}

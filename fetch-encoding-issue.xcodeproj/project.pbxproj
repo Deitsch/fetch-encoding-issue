@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8920D8AB2E68989000B6FF5F /* Fetch in Frameworks */ = {isa = PBXBuildFile; productRef = 8920D8AA2E68989000B6FF5F /* Fetch */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8920D89A2E68984B00B6FF5F /* fetch-encoding-issue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fetch-encoding-issue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8920D8AB2E68989000B6FF5F /* Fetch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "fetch-encoding-issue";
 			packageProductDependencies = (
+				8920D8AA2E68989000B6FF5F /* Fetch */,
 			);
 			productName = "fetch-encoding-issue";
 			productReference = 8920D89A2E68984B00B6FF5F /* fetch-encoding-issue.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 8920D8912E68984B00B6FF5F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8920D8A92E68989000B6FF5F /* XCRemoteSwiftPackageReference "Fetch" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8920D89B2E68984B00B6FF5F /* Products */;
 			projectDirPath = "";
@@ -341,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8920D8A92E68989000B6FF5F /* XCRemoteSwiftPackageReference "Fetch" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/allaboutapps/Fetch";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8920D8AA2E68989000B6FF5F /* Fetch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8920D8A92E68989000B6FF5F /* XCRemoteSwiftPackageReference "Fetch" */;
+			productName = Fetch;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8920D8922E68984B00B6FF5F /* Project object */;
 }
